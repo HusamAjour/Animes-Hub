@@ -38,7 +38,7 @@ if(animeList){
 var addAnimeForm = document.getElementById('addAnimeToWL');
 addAnimeForm.addEventListener('submit', addAnimeFormHandler);
 
-// Form handler
+// Add anime form handler
 function addAnimeFormHandler(e){
   var animeName = e.target.animeTitleInput.value;
   var animeCat = e.target.animeCategory.value;
@@ -52,7 +52,6 @@ function addAnimeFormHandler(e){
 
 
 // Render Anime List function
-
 function renderAnimeList(){
   renderAnimeListHeader();
   var animeTable = document.getElementById('animeListTable');
@@ -109,6 +108,7 @@ function renderAnimeListHeader(){
   animeTable.appendChild(animeTableHeader);
 }
 
+// Remove anime button handler
 function deleteAnimeFromList(e){
   var selectedAnime = e.target.id;
   Anime.all.splice(selectedAnime, 1);
