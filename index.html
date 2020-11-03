@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Watch Anime List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>My To-Watch Anime List</h1>
+    </header>
+    <main>
+        <section class="main-container">
+            <div class="form-container">
+                <form id="addAnimeToWL">
+                    <div class="form-container-inner"> 
+                        <label for="animeTitleInput">Anime Title</label>
+                        <input type="text" id=animeTitleInput required>
+                    </div>
+                    <div class="form-container-inner">
+                        <label for="animeCategory">Anime Category</label>
+                        <select id="animeCategory" required></select>
+                    </div>
+                    <div class="form-container-inner">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container">
+                <h2>My To-Watch Anime List</To-></h2>
+                <table id="animeListTable">
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
