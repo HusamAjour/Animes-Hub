@@ -40,6 +40,7 @@ addAnimeForm.addEventListener('submit', addAnimeFormHandler);
 
 // Add anime form handler
 function addAnimeFormHandler(e){
+  e.preventDefault();
   var animeName = e.target.animeTitleInput.value;
   var animeCat = e.target.animeCategory.value;
   var animeRandomSeason = getRandomInt(1,8);
@@ -48,6 +49,8 @@ function addAnimeFormHandler(e){
   var animeTable = document.getElementById('animeListTable');
   animeTable.innerHTML = '';
   renderAnimeList();
+  var addAnimeForm = document.getElementById('addAnimeToWL');
+  addAnimeForm.reset();
 }
 
 
